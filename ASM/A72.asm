@@ -5,8 +5,8 @@
         .globl  main
 
 main:
-        ori      $8, $0, 0xFFFF0000       # put bit pattern into register $8
-        sll      $9, $8, 2          # shift left logical by two
-        srl      $10, $9, 2          # shift left logical by two
+        ori      $8, $0, -2       # put bit pattern into register $8
+        sll      $9, $8, 1          # shift left logical by two
+        srl      $10, $9, 1          # shift left logical by two
 
 ## End of file
